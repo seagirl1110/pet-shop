@@ -1,0 +1,18 @@
+.category {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.category_image {
+    width: 316px;
+}
+
+.category_title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: #282828;
+}

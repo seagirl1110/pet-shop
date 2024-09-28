@@ -1,3 +1,9 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
 .banner {
     background-image: url('./../../assets/image/banner.png');
     background-repeat: no-repeat;

@@ -1,0 +1,33 @@
+.title_container {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    color: #282828;
+    margin-right: 32px;
+}
+
+.divider {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #DDDDDD;
+}
+
+@media screen and (max-width: 768.9px) {
+    .title_container {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .divider {
+        min-width: 165px;
+    }
+}

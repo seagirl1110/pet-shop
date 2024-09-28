@@ -1,0 +1,19 @@
+.nav_link {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #DDDDDD;
+    text-decoration: none;
+    color: #8B8B8B;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    flex-shrink: 0;
+}
+
+.nav_link:hover {
+    background-color: #F1F3F4;
+}
+
+.nav_link__active {
+    color: #282828;
+}
