@@ -30,20 +30,31 @@
     }
 }
 
-.banner_btn {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 26px;
-    text-align: center;
-    background-color: #0D50FF;
-    color: #FFFFFF;
-    padding: 16px 56px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    cursor: pointer;
+.discount_wrapper {
+    background: linear-gradient(261.47deg, #2451C6 32.63%, #0D50FF 98.96%);
+    padding: 32px 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-.banner_btn:hover {
-    background-color: #282828;
+.discount_title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.discount_inner {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.discount_banner {
+    width: 100%;
+    max-width: 783px;
 }
