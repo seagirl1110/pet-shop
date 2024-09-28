@@ -1,0 +1,27 @@
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    min-height: 128px;
+    padding: 25px 40px;
+}
+
+.nav_container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.nav_link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #282828;
+    text-decoration: none;
+}
+
+.nav_link__active {
+    color: #0D50FF;
+}
