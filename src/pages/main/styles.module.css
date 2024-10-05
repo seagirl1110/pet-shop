@@ -48,9 +48,8 @@
 
 .discount_inner {
     display: flex;
-    gap: 32px;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: end;
     justify-content: center;
 }
 
