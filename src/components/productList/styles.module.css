@@ -1,0 +1,13 @@
+.products_wrapper {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.products_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}

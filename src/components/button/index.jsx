@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
 
-function Button({ name, defaultStyles, hoverStyles }) {
+function Button({ name, defaultStyles, hoverStyles, className, onClick }) {
   const [isHover, setIsHover] = useState(false);
   const [btnStyles, setBtnStyles] = useState(defaultStyles);
 
@@ -15,7 +15,8 @@ function Button({ name, defaultStyles, hoverStyles }) {
 
   return (
     <button
-      className={styles.btn}
+      onClick={onClick}
+      className={className ? `${styles.btn} ${className}` : styles.btn}
       style={btnStyles}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}

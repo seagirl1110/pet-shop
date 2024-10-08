@@ -4,6 +4,7 @@ import discountBanner from './../../assets/image/discount_banner.png';
 import CategoryList from '../../components/categoryList';
 import Form from '../../components/form';
 import Button from '../../components/button';
+import ProductList from '../../components/productList';
 
 function Main() {
   return (
@@ -60,6 +61,7 @@ function Main() {
           />
         </div>
       </section>
+      <ProductList page="sales-main" />
     </main>
   );
 }
