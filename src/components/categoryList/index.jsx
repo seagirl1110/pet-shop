@@ -21,12 +21,14 @@ function CategoryList({ page }) {
     getAllCategories();
   }, []);
 
+  const link =
+    page === 'categories'
+      ? null
+      : { name: 'All categories', path: '/categories' };
+
   return (
     <section className={styles.categories_wrapper}>
-      <SectionTitle
-        title="Categories"
-        link={{ name: 'All categories', path: '/categories' }}
-      ></SectionTitle>
+      <SectionTitle title="Categories" link={link}></SectionTitle>
       <div className={styles.categories_inner}>
         {categories.map((item) => (
           <CategoryItem

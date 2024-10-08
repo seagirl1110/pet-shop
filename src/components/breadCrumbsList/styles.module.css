@@ -1,0 +1,15 @@
+.nav_wrapper {
+    display: flex;
+    padding: 0 40px;
+}
+
+.nav_inner {
+    display: flex;
+    align-items: center;
+}
+
+.nav_separator {
+    width: 16px;
+    height: 1px;
+    background-color: #DDDDDD
+}
