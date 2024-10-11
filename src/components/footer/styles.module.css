@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0 40px 80px;
+    padding: 80px 40px 80px;
 }
 
 .footer_inner {
