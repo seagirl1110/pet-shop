@@ -9,6 +9,7 @@ import { fetchCategories } from './redux/thunks';
 import { fetchProducts } from './redux/thunks';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import Products from './pages/products';
 
 function App() {
   const dispatch = useDispatch();
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/categories/:id" element={<Category />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
       <Footer />
     </div>
