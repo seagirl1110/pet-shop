@@ -1,17 +1,10 @@
 import styles from './styles.module.css';
 import SectionTitle from '../../components/sectionTitle';
 import ProductItem from '../productItem';
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchProducts } from '../../redux/thunks';
+import { useSelector } from 'react-redux';
 
-function ProductList({ page }) {
+function ProductList({ page, title, link, id }) {
   const { data, status, error } = useSelector((state) => state.products);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchProducts());
-  }, [dispatch]);
 
   if (status === 'loading') return <div>Loading...</div>;
   if (status === 'failed') return <div>{error}</div>;
@@ -21,15 +14,14 @@ function ProductList({ page }) {
     products = data.filter((item) => item.discont_price);
   } else if (page === 'sales-main') {
     products = data.filter((item) => item.discont_price).slice(0, 4);
+  } else if (page === 'categories' && id) {
+    products = data.filter((item) => item.categoryId === id);
   }
 
   if (status === 'succeeded')
     return (
       <div className={styles.products_wrapper}>
-        <SectionTitle
-          title="Sale"
-          link={{ name: 'All sales', path: '/sales' }}
-        />
+        <SectionTitle title={title} link={link} />
         <div className={styles.products_inner}>
           {products.map((item) => (
             <ProductItem key={item.id} {...item} />

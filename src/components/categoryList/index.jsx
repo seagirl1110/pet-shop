@@ -1,25 +1,13 @@
 import styles from './styles.module.css';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
 import SectionTitle from '../../components/sectionTitle';
 import CategoryItem from '../categoryItem';
+import { useSelector } from 'react-redux';
 
 function CategoryList({ page }) {
-  const [categories, setCategories] = useState([]);
+  const categoriesData = useSelector((state) => state.categories.data);
 
-  const getAllCategories = async () => {
-    try {
-      const response = await axios.get('http://localhost:3333/categories/all');
-      const data = page === 'main' ? response.data.slice(0, 4) : response.data;
-      setCategories(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    getAllCategories();
-  }, []);
+  const categories =
+    page === 'main' ? categoriesData.slice(0, 4) : categoriesData;
 
   const link =
     page === 'categories'

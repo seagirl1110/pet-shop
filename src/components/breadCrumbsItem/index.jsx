@@ -5,11 +5,12 @@ function BreadCrumbsItem({ path, name }) {
   return (
     <NavLink
       to={path}
-      className={({ isActive }) =>
-        isActive
+      className={({ isActive }) => {
+        return isActive
           ? `${styles.nav_link} ${styles.nav_link__active}`
-          : `${styles.nav_link}`
-      }
+          : `${styles.nav_link}`;
+      }}
+      end
     >
       {name}
     </NavLink>

@@ -11,11 +11,12 @@ function ProductItem({ title, image, id, price, discont_price }) {
   return (
     <div className={styles.product_wrapper}>
       <Link to={`/products/${id}`} className={styles.product_inner}>
-        <img
-          src={`http://localhost:3333${image}`}
-          alt={`product: ${title}`}
-          className={styles.product_image}
-        />
+        <div className={styles.product_image}>
+          <img
+            src={`http://localhost:3333${image}`}
+            alt={`product: ${title}`}
+          />
+        </div>
         {discont_price && (
           <div className={styles.product_sale}>
             -{Math.ceil(((price - discont_price) / price) * 100)}%

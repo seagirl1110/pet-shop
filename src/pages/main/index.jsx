@@ -25,7 +25,7 @@ function Main() {
           />
         </Link>
       </div>
-      <CategoryList page={'main'} />
+      <CategoryList page="main" />
       <section className={styles.discount_wrapper}>
         <h2 className={styles.discount_title}>5% off on the first order</h2>
         <div className={styles.discount_inner}>
@@ -61,7 +61,11 @@ function Main() {
           />
         </div>
       </section>
-      <ProductList page="sales-main" />
+      <ProductList
+        page="sales-main"
+        title="Sale"
+        link={{ name: 'All sales', path: '/sales' }}
+      />
     </main>
   );
 }

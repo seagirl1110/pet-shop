@@ -8,3 +8,11 @@ export const fetchProducts = createAsyncThunk(
     return response.data;
   }
 );
+
+export const fetchCategories = createAsyncThunk(
+  'categories/fetchCategories',
+  async () => {
+    const response = await axios.get('http://localhost:3333/categories/all');
+    return response.data;
+  }
+);
