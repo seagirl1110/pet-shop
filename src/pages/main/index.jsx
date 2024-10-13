@@ -64,7 +64,7 @@ function Main() {
       <ProductList
         page="sales-main"
         title="Sale"
-        link={{ name: 'All sales', path: '/sales' }}
+        link={{ name: 'All sales', path: '/sale' }}
       />
     </main>
   );
