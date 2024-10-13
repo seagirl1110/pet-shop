@@ -26,6 +26,7 @@ function Header() {
                 ? `${styles.nav_link} ${styles.nav_link__active}`
                 : `${styles.nav_link}`
             }
+            end
           >
             {name}
           </NavLink>
