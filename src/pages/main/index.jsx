@@ -51,6 +51,7 @@ function Main() {
               activeStyles: {
                 color: '#0D50FF',
                 backgroundColor: '#F1F3F4',
+                pointerEvents: 'none',
               },
             }}
             inputStyles={{
