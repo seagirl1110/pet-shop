@@ -2,6 +2,7 @@ import styles from './styles.module.css';
 import { Link, NavLink } from 'react-router-dom';
 import logo from './../../assets/icons/logo.svg';
 import cart from './../../assets/icons/cart.svg';
+import { useSelector } from 'react-redux';
 
 const navList = [
   { name: 'Main Page', path: '/' },
@@ -11,6 +12,9 @@ const navList = [
 ];
 
 function Header() {
+  const cartData = useSelector((state) => state.cart.data);
+  const cartCount = cartData.reduce((acc, item) => acc + item.count, 0);
+
   return (
     <header className={styles.header_container}>
       <Link to="/">
@@ -32,9 +36,12 @@ function Header() {
           </NavLink>
         ))}
       </nav>
-      <div>
+      <Link className={styles.cart} to="/cart">
         <img src={cart} alt="cart" />
-      </div>
+        {cartCount !== 0 && (
+          <div className={styles.cart_count}>{cartCount}</div>
+        )}
+      </Link>
     </header>
   );
 }

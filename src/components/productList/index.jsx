@@ -24,7 +24,7 @@ function ProductList({ page, title, link, id }) {
         <SectionTitle title={title} link={link} />
         <div className={styles.products_inner}>
           {products.map((item) => (
-            <ProductItem key={item.id} {...item} />
+            <ProductItem key={item.id} product={item} />
           ))}
         </div>
       </div>

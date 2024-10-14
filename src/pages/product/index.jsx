@@ -1,11 +1,16 @@
 import styles from './styles.module.css';
 import { useParams, useLocation } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useState } from 'react';
 import BreadCrumbsList from '../../components/breadCrumbsList';
 import ButtonAddToCart from '../../components/buttonAddToCart';
 import Counter from '../../components/counter';
+import { addToCart } from '../../redux/slices/cartSlice';
 
 function Product() {
+  const [count, setCount] = useState(1);
+  const dispatch = useDispatch();
+
   const { pathname } = useLocation();
   const { id } = useParams();
   const {
@@ -63,9 +68,15 @@ function Product() {
               )}
             </div>
             <div className={styles.product_cart}>
-              <Counter />
+              <Counter
+                count={count}
+                plus={() => setCount(count + 1)}
+                minus={() => setCount(count - 1)}
+              />
               <div className={styles.product_btn}>
-                <ButtonAddToCart />
+                <ButtonAddToCart
+                  onClick={() => dispatch(addToCart({ product, count }))}
+                />
               </div>
             </div>
             <div className={styles.product_content}>

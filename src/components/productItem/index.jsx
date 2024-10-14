@@ -1,8 +1,13 @@
 import ButtonAddToCart from '../buttonAddToCart';
 import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../redux/slices/cartSlice';
 
-function ProductItem({ title, image, id, price, discont_price }) {
+function ProductItem({ product }) {
+  const dispatch = useDispatch();
+
+  const { title, image, id, price, discont_price } = product;
   const productPrice = discont_price ? discont_price : price;
 
   return (
@@ -30,7 +35,9 @@ function ProductItem({ title, image, id, price, discont_price }) {
         </div>
       </Link>
       <div className={styles.product_btn}>
-        <ButtonAddToCart />
+        <ButtonAddToCart
+          onClick={() => dispatch(addToCart({ product, count: 1 }))}
+        />
       </div>
     </div>
   );

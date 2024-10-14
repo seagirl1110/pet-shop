@@ -2,12 +2,18 @@ import styles from './styles.module.css';
 import { useState } from 'react';
 import Button from '../button';
 
-function ButtonAddToCart() {
+function ButtonAddToCart({ onClick }) {
   const [isAdded, setIsAdded] = useState(false);
+
+  const handleClick = () => {
+    setIsAdded(true);
+    onClick();
+  };
+
   return (
     <Button
       className={styles.btn}
-      onClick={() => setIsAdded(true)}
+      onClick={handleClick}
       name={isAdded ? 'Added' : 'Add to cart'}
       defaultStyles={
         isAdded
@@ -15,6 +21,7 @@ function ButtonAddToCart() {
               color: ' #282828',
               backgroundColor: '#FFFFFF',
               border: '1px solid #282828',
+              pointerEvents: 'none',
             }
           : {
               color: '#FFFFFF',
