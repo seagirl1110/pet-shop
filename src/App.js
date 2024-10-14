@@ -10,6 +10,7 @@ import { fetchProducts } from './redux/thunks';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Products from './pages/products';
+import Product from './pages/product';
 import Sales from './pages/sales';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/categories" element={<Categories />} />
         <Route path="/categories/:id" element={<Category />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<Product />} />
         <Route path="/sale" element={<Sales />} />
       </Routes>
       <Footer />

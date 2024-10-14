@@ -1,0 +1,134 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0 0;
+}
+
+.product_wrapper {
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    flex-grow: 1;
+}
+
+.product_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 780px;
+}
+
+.product_image {
+    border-radius: 12px;
+    max-height: 572px;
+    max-width: 548px;
+    flex-grow: 1;
+}
+
+.product_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: contain;
+}
+
+.product_title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+    color: #282828;
+}
+
+.product_price_wrapper {
+    display: flex;
+    gap: 32px;
+}
+
+.product_price {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    color: #282828;
+}
+
+.product_price__old {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 52px;
+    text-decoration: line-through;
+    color: #8B8B8B;
+}
+
+.product_price_inner {
+    display: flex;
+    gap: 16px;
+    height: 100%;
+    align-items: end;
+}
+
+.product_sale_wrapper {
+    height: 100%;
+    position: relative;
+}
+
+.product_sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: #0D50FF;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.product_cart {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+
+}
+
+.product_btn {
+    max-width: 316px;
+    width: 100%;
+}
+
+.product_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product_description_title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #282828;
+}
+
+.product_description_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: #282828;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
+    overflow: hidden;
+}
+
+.product_description_btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    color: #282828;
+    text-decoration: underline;
+}
