@@ -1,0 +1,42 @@
+.main_container {
+    display: flex;
+    justify-content: center;
+    padding: 80px 40px 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 690px;
+}
+
+.image {
+    width: 100%
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    max-width: 664px;
+    padding: 0 15px;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: center;
+    color: #282828;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: #8B8B8B;
+}

@@ -13,6 +13,7 @@ import Products from './pages/products';
 import Product from './pages/product';
 import Sales from './pages/sales';
 import Cart from './pages/cart';
+import PageNotFound from './pages/pageNotFound';
 
 function App() {
   const dispatch = useDispatch();
@@ -33,6 +34,7 @@ function App() {
         <Route path="/products/:id" element={<Product />} />
         <Route path="/sale" element={<Sales />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </div>
