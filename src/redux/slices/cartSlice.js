@@ -29,9 +29,13 @@ const cartSlice = createSlice({
       );
       item.count = item.count - 1;
     },
+    emptyCart(state) {
+      state.data = [];
+    },
   },
 });
 
-export const { addToCart, removeFromCart, plus, minus } = cartSlice.actions;
+export const { addToCart, removeFromCart, plus, minus, emptyCart } =
+  cartSlice.actions;
 
 export default cartSlice.reducer;

@@ -7,11 +7,11 @@ import { useState } from 'react';
 
 const inputList = [
   { type: 'text', title: 'Name' },
-  { type: 'text', title: 'Phone number' },
+  { type: 'number', title: 'Phone number' },
   { type: 'email', title: 'Email' },
 ];
 
-function Form({ btn, width, inputStyles, endpoint }) {
+function Form({ btn, width, inputStyles, endpoint, addData, onSubmitFunc }) {
   const [submit, setSubmit] = useState(false);
 
   const { register, handleSubmit } = useForm({
@@ -19,10 +19,16 @@ function Form({ btn, width, inputStyles, endpoint }) {
   });
 
   const onSubmitForm = async (data) => {
+    let postData = data;
+
+    if (addData) {
+      postData = { ...postData, addData };
+    }
+
     try {
       const response = await axios.post(
         `http://localhost:3333/${endpoint}`,
-        { ...data },
+        { ...postData },
         {
           headers: {
             'Content-Type': 'application/json',
@@ -31,6 +37,7 @@ function Form({ btn, width, inputStyles, endpoint }) {
       );
       if (response.statusText === 'OK') {
         setSubmit(true);
+        onSubmitFunc();
       }
     } catch (error) {
       console.log(error);
