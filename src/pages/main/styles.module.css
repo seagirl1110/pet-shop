@@ -50,10 +50,24 @@
     display: flex;
     flex-wrap: wrap;
     align-items: end;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1369.9px) {
+    .discount_inner {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .discount_banner {
     width: 100%;
     max-width: 783px;
+}
+
+.discount_form {
+    margin: 32px 0;
+    flex-grow: 1;
+    max-width: 516px;
+    width: 100%;
 }

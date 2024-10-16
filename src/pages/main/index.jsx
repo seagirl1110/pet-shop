@@ -34,32 +34,34 @@ function Main() {
             src={discountBanner}
             alt="pets_banner"
           />
-          <Form
-            endpoint="sale/send"
-            width={'516px'}
-            btn={{
-              nameDefault: 'Get a discount',
-              nameActive: 'Request Submitted',
-              defaultStyles: {
-                color: '#282828',
-                backgroundColor: '#FFFFFF',
-              },
-              hoverStyles: {
+          <div className={styles.discount_form}>
+            <Form
+              endpoint="sale/send"
+              width={'516px'}
+              btn={{
+                nameDefault: 'Get a discount',
+                nameActive: 'Request Submitted',
+                defaultStyles: {
+                  color: '#282828',
+                  backgroundColor: '#FFFFFF',
+                },
+                hoverStyles: {
+                  color: '#FFFFFF',
+                  backgroundColor: '#282828',
+                },
+                activeStyles: {
+                  color: '#0D50FF',
+                  backgroundColor: '#F1F3F4',
+                  pointerEvents: 'none',
+                },
+              }}
+              inputStyles={{
                 color: '#FFFFFF',
-                backgroundColor: '#282828',
-              },
-              activeStyles: {
-                color: '#0D50FF',
-                backgroundColor: '#F1F3F4',
-                pointerEvents: 'none',
-              },
-            }}
-            inputStyles={{
-              color: '#FFFFFF',
-              backgroundColor: 'transparent',
-              border: '1px solid #FFFFFF',
-            }}
-          />
+                backgroundColor: 'transparent',
+                border: '1px solid #FFFFFF',
+              }}
+            />
+          </div>
         </div>
       </section>
       <ProductList
