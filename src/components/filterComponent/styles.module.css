@@ -1,0 +1,47 @@
+.filter_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.filter_inner {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.filter_title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #282828;
+}
+
+.filter_price_input {
+    width: 112px;
+    height: 36px;
+    font-family: "Montserrat", system-ui;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    color: #282828;
+}
+
+.filter_discounted_checkbox {
+    width: 36px;
+    height: 36px;
+
+    * {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    *::after {
+        transform: rotate(45deg) scale(2) translate(-10%, -50%) !important;
+    }
+}
+
+.filter_sorted_select {
+    width: 200px;
+    height: 36px;
+}
