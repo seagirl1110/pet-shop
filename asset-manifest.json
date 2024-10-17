@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pet_shop/static/css/main.d6cd9be4.css",
+    "main.js": "/pet_shop/static/js/main.cbae8d2d.js",
+    "static/media/banner.png": "/pet_shop/static/media/banner.a2d26dc9da9389291c0e.png",
+    "static/media/discount_banner.png": "/pet_shop/static/media/discount_banner.410fa9889acb9f0b5886.png",
+    "static/media/404.png": "/pet_shop/static/media/404.155175fab360b3479811.png",
+    "static/media/logo.svg": "/pet_shop/static/media/logo.558e14a4d7433136269f643001179965.svg",
+    "static/media/whatsapp.svg": "/pet_shop/static/media/whatsapp.976b56539522ecec4d232193ad478f23.svg",
+    "index.html": "/pet_shop/index.html",
+    "static/media/cart.svg": "/pet_shop/static/media/cart.5811eced3fe8014209a8d56d3d27c586.svg",
+    "static/media/instagram.svg": "/pet_shop/static/media/instagram.0535a50a5781079486ef5b060a7b6c86.svg",
+    "static/media/modal_close.svg": "/pet_shop/static/media/modal_close.9339a86cd9bf47830420c5ac4e71a0ba.svg",
+    "static/media/cart_del.svg": "/pet_shop/static/media/cart_del.9c8dd88c7706cf7c512fed86a69d9ce7.svg",
+    "static/media/counter_plus.svg": "/pet_shop/static/media/counter_plus.10f92ec21ea90f57ac9b58c959ec22c2.svg",
+    "static/media/counter_minus.svg": "/pet_shop/static/media/counter_minus.490889845cadc2a58691f36182ba72c1.svg",
+    "main.d6cd9be4.css.map": "/pet_shop/static/css/main.d6cd9be4.css.map",
+    "main.cbae8d2d.js.map": "/pet_shop/static/js/main.cbae8d2d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6cd9be4.css",
+    "static/js/main.cbae8d2d.js"
+  ]
+}
