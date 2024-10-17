@@ -7,8 +7,9 @@ import store from './redux/store';
 import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const basename = process.env.NODE_ENV === 'production' ? '/pet-shop' : '';
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={basename}>
     <Provider store={store}>
       <App />
     </Provider>
