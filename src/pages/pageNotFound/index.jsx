@@ -16,17 +16,7 @@ function PageNotFound() {
           </p>
         </div>
         <Link to="/">
-          <Button
-            name="Go Home"
-            defaultStyles={{
-              color: '#FFFFFF',
-              backgroundColor: '#0D50FF',
-            }}
-            hoverStyles={{
-              color: '#FFFFFF',
-              backgroundColor: '#282828',
-            }}
-          />
+          <Button name="Go Home" />
         </Link>
       </div>
     </main>

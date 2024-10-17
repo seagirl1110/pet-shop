@@ -66,9 +66,9 @@ function Form({ btn, width, inputStyles, endpoint, addData, onSubmitFunc }) {
         ))}
       </div>
       <Button
-        name={submit ? btn.nameActive : btn.nameDefault}
-        defaultStyles={submit ? btn.activeStyles : btn.defaultStyles}
-        hoverStyles={btn.hoverStyles}
+        name={submit ? btn.nameActive : btn.name}
+        isActive={submit}
+        type={btn.type}
       />
     </form>
   );

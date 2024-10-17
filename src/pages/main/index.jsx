@@ -12,17 +12,7 @@ function Main() {
       <div className={styles.banner}>
         <h1 className={styles.title}>Amazing Discounts on Pets Products!</h1>
         <Link to="/sale">
-          <Button
-            name="Check out"
-            defaultStyles={{
-              color: '#FFFFFF',
-              backgroundColor: '#0D50FF',
-            }}
-            hoverStyles={{
-              color: '#FFFFFF',
-              backgroundColor: '#282828',
-            }}
-          />
+          <Button name="Check out" />
         </Link>
       </div>
       <CategoryList page="main" />
@@ -39,21 +29,9 @@ function Main() {
               endpoint="sale/send"
               width={'516px'}
               btn={{
-                nameDefault: 'Get a discount',
+                name: 'Get a discount',
                 nameActive: 'Request Submitted',
-                defaultStyles: {
-                  color: '#282828',
-                  backgroundColor: '#FFFFFF',
-                },
-                hoverStyles: {
-                  color: '#FFFFFF',
-                  backgroundColor: '#282828',
-                },
-                activeStyles: {
-                  color: '#0D50FF',
-                  backgroundColor: '#F1F3F4',
-                  pointerEvents: 'none',
-                },
+                type: 'secondary',
               }}
               inputStyles={{
                 color: '#FFFFFF',

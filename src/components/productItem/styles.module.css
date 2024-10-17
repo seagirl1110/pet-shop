@@ -88,6 +88,10 @@
     display: none;
 }
 
+.product_btn>* {
+    width: 100%;
+}
+
 .product_wrapper:hover .product_btn {
     display: block;
 }

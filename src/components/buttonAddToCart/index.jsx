@@ -12,28 +12,9 @@ function ButtonAddToCart({ onClick }) {
 
   return (
     <Button
-      className={styles.btn}
       onClick={handleClick}
       name={isAdded ? 'Added' : 'Add to cart'}
-      defaultStyles={
-        isAdded
-          ? {
-              color: ' #282828',
-              backgroundColor: '#FFFFFF',
-              border: '1px solid #282828',
-              pointerEvents: 'none',
-            }
-          : {
-              color: '#FFFFFF',
-              backgroundColor: '#0D50FF',
-              border: '1px solid #0D50FF',
-            }
-      }
-      hoverStyles={{
-        color: '#FFFFFF',
-        backgroundColor: '#282828',
-        border: '1px solid #282828',
-      }}
+      isActive={isAdded}
     />
   );
 }

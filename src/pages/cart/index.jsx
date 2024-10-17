@@ -115,24 +115,9 @@ function Cart() {
                 endpoint="order/send"
                 width={'484px'}
                 btn={{
-                  nameDefault: 'Order',
+                  name: 'Order',
                   nameActive: 'The Order is Placed',
-                  defaultStyles: {
-                    color: '#FFFFFF',
-                    backgroundColor: '#0D50FF',
-                    border: '1px solid #0D50FF',
-                  },
-                  hoverStyles: {
-                    color: '#FFFFFF',
-                    backgroundColor: '#282828',
-                    border: '1px solid #282828',
-                  },
-                  activeStyles: {
-                    color: ' #282828',
-                    backgroundColor: '#FFFFFF',
-                    border: '1px solid #282828',
-                    pointerEvents: 'none',
-                  },
+                  type: 'primary',
                 }}
                 inputStyles={{
                   color: '#8B8B8B',
@@ -150,17 +135,7 @@ function Cart() {
               Looks like you have no items in your basket currently.
             </div>
             <Link to="/products">
-              <Button
-                name="Continue Shopping"
-                defaultStyles={{
-                  color: '#FFFFFF',
-                  backgroundColor: '#0D50FF',
-                }}
-                hoverStyles={{
-                  color: '#FFFFFF',
-                  backgroundColor: '#282828',
-                }}
-              />
+              <Button name="Continue Shopping" />
             </Link>
           </div>
         )}

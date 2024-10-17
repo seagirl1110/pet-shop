@@ -1,26 +1,15 @@
 import styles from './styles.module.css';
-import { useEffect, useState } from 'react';
+import cn from 'classnames';
 
-function Button({ name, defaultStyles, hoverStyles, className, onClick }) {
-  const [isHover, setIsHover] = useState(false);
-  const [btnStyles, setBtnStyles] = useState(defaultStyles);
-
-  useEffect(() => {
-    if (isHover) {
-      setBtnStyles(hoverStyles);
-    } else {
-      setBtnStyles(defaultStyles);
-    }
-  }, [isHover]);
+function Button({ name, onClick, isActive, type = 'primary' }) {
+  const className = cn({
+    [styles.btn]: true,
+    [styles.btn__active]: isActive,
+    [styles[`btn__${type}`]]: type,
+  });
 
   return (
-    <button
-      onClick={onClick}
-      className={className ? `${styles.btn} ${className}` : styles.btn}
-      style={btnStyles}
-      onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
-    >
+    <button onClick={onClick} className={className}>
       {name}
     </button>
   );

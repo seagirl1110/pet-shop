@@ -9,3 +9,38 @@
     border-radius: 8px;
     cursor: pointer;
 }
+
+.btn__primary {
+    color: #FFFFFF;
+    background-color: #0D50FF;
+    border: 1px solid #0D50FF;
+}
+
+.btn__primary:hover {
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 1px solid #282828;
+}
+
+.btn__primary.btn__active {
+    color: #282828;
+    background-color: #FFFFFF;
+    border: 1px solid #282828;
+    pointer-events: none;
+}
+
+.btn__secondary {
+    color: #282828;
+    background-color: #FFFFFF;
+}
+
+.btn__secondary:hover {
+    color: #FFFFFF;
+    background-color: #282828;
+}
+
+.btn__secondary.btn__active {
+    color: #0D50FF;
+    background-color: #F1F3F4;
+    pointer-events: none;
+}
