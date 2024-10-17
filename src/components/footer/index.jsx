@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './styles.module.css';
 import SectionTitle from '../sectionTitle';
 import instagram from './../../assets/icons/instagram.svg';

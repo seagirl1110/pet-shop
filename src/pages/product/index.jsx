@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './styles.module.css';
 import { useParams, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';

@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
 import discountBanner from './../../assets/image/discount_banner.png';
@@ -10,7 +11,7 @@ function Main() {
   return (
     <main className={styles.main_container}>
       <div className={styles.banner}>
-        <h1 className={styles.title}>Amazing Discounts on Pets Products!</h1>
+        <h1 className={styles.title}>Amazing Discounts on Pets Products!</h1>
         <Link to="/sale">
           <Button name="Check out" />
         </Link>

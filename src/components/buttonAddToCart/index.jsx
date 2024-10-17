@@ -1,4 +1,4 @@
-import styles from './styles.module.css';
+import React from 'react';
 import { useState } from 'react';
 import Button from '../button';
 

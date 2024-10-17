@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './styles.module.css';
 import btnPlus from './../../assets/icons/counter_plus.svg';
 import btnMinus from './../../assets/icons/counter_minus.svg';

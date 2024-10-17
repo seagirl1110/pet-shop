@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './styles.module.css';
 import CategoryList from '../../components/categoryList';
 import BreadCrumbsList from '../../components/breadCrumbsList';

@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './styles.module.css';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
@@ -147,10 +148,10 @@ function Cart() {
               <div className={styles.modal_title}>Congratulations!</div>
               <div className={styles.modal_text_wrapper}>
                 <div className={styles.modal_text}>
-                  Your order has been successfully placed on the website.
+                  Your order has been successfully placed on the website.
                 </div>
                 <div className={styles.modal_text}>
-                  A manager will contact you shortly to confirm your order.
+                  A manager will contact you shortly to confirm your order.
                 </div>
               </div>
             </div>

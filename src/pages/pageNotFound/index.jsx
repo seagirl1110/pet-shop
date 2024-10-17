@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './styles.module.css';
 import img404 from './../../assets/image/404.png';
 import Button from './../../components/button';
