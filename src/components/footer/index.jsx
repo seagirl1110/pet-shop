@@ -19,10 +19,18 @@ function Footer() {
           <div className={styles.footer_info}>
             <div className={styles.footer_info_title}>Socials</div>
             <div className={styles.footer_info_inner}>
-              <a href="#">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={instagram} alt="instagram" />
               </a>
-              <a href="#">
+              <a
+                href="https://web.whatsapp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={whatsapp} alt="whatsapp" />
               </a>
             </div>
