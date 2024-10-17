@@ -1,3 +1,9 @@
+## Backend
+
+For the application to work correctly, you need to run the [backend](https://github.com/seagirl1110/Pet-Shop-Backend)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
